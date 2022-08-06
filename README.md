@@ -18,4 +18,5 @@
 **Amazon Chime SDK** は [**Amazon Chime**](https://aws.amazon.com/chime) の様なビデオミーティングの機能をご自身で開発した Web/Mobile アプリケーションに組み込むことができる開発キットです。  
 以前ご紹介した **Amazon Interactive Vide Service(IVS)** も、同じ様にご自身の開発したアプリケーションに動画配信機能を組み込むことができますが、実現できる機能に違いがありますので、下記にイメージを記載します。
 
+![chime-sdk 001](https://user-images.githubusercontent.com/38583473/183244803-7b69c04b-21a8-42fa-97f2-ad967c36b30f.png)
 
