@@ -98,7 +98,7 @@
 ![chime-sdk 005](https://user-images.githubusercontent.com/38583473/183283828-03b785c0-521d-43fb-9732-901af50d7e77.png)
 
 **Chime SDK** を使ってミーティングを作成したり、参加者としての ID を発行し、実際にミーティングに参加するための API を **AWS Lambda** と **Amazon API Gateway** を使って構築しました。  
-こちらは **Serverless Framework** を使って構築しており、サンプルコードは [**こちら**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-handler) です。
+こちらは **Serverless Framework** を使って構築しており、サンプルコードは [**こちら**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-handler) です。  
 また、前述のミーティングの ID を保持する **DynamoDB** のレコードが削除された際に別の **Lambda** 関数を呼び出し、 **Chime** 上に存在するミーティングも連動して削除する機能も追加しました。  
 こちらは、仕様上5分以上ミーティングへの接続がない場合自動的にミーティング自体が削除される仕様になっているので、さほど重要ではないですが、 **DynamoDB Streams** を活用したイベントドリブンなアーキテクチャの検討のために追加してみました。
 
