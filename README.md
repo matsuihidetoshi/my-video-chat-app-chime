@@ -100,6 +100,10 @@
 - **Amplify** を使えば、アプリケーション今回の様に他の AWS サービスと統合して、実際に動くアプリケーションとして、容易に機能の検証ができる。
 ということがお分かりいただけたかと思います！    
 
+サンプルコードですが、途中でもリンクを記載しましたが、改めて下記の通りご案内します。  
+- [**Amplify プロジェクト**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-front)
+- [**Chime ハンドラー**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-handler)
+
 また、今回のサンプル等は、基本的な Web 開発のスキルと **Amplify** の基本的な理解が必要になるかと思います。  
 **Amplify** について詳しく知りたい、そもそもどんなものか分からないという方は、 [**こちら**](https://aws.amazon.com/jp/builders-flash/202103/amplify-app-development) などを参考に別のサンプルなども動かしてみて理解を深めていただけると良いかと思います。  
 
