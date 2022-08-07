@@ -112,7 +112,7 @@
 - [**Amplify プロジェクト**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-front)
 - [**Chime ハンドラー**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-handler)
 
-また、今回のサンプル等は、基本的な Web 開発のスキルと **Amplify** の基本的な理解が必要になるかと思います。  
+また、今回の内容をお試し頂くには、基本的な Web 開発と **Amplify** に関する理解が必要になるかと思います。  
 **Amplify** について詳しく知りたい、そもそもどんなものか分からないという方は、 [**こちら**](https://aws.amazon.com/jp/builders-flash/202103/amplify-app-development) などを参考に別のサンプルなども動かしてみて理解を深めていただけると良いかと思います。  
 
 今回の内容を参考に、ぜひご自身でもお試しいただけると幸いです！
