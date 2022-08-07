@@ -84,11 +84,19 @@
 ***
 
 ### ミーティング情報の管理機能
+
+![chime-sdk 004](https://user-images.githubusercontent.com/38583473/183283810-19c5a2e2-c7da-4c88-be3a-79c9e01b4b6d.png)
+
 ユーザーがミーティングを作成したり、作成済みのミーティングを一覧表示したり、その中からミーティングを選択して参加したりといった機能を実現するために、ミーティングの ID を保存する必要があります。  
 今回は **Amazon DynamoDB** をデータソースとし、 **AWS AppSync** を経由してフロントエンドとリアルタイムにミーティングの ID の更新機能を実現しました。  
 こちらもユーザー登録・ログイン機能と同様、 **Amplify CLI** を使ってリソースを作成しており、 [**サンプルコード**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-front) にも含まれています。  
 
+***
+
 ### Chime ミーティングハンドラー
+
+![chime-sdk 005](https://user-images.githubusercontent.com/38583473/183283828-03b785c0-521d-43fb-9732-901af50d7e77.png)
+
 **Chime SDK** を使ってミーティングを作成したり、参加者としての ID を発行し、実際にミーティングに参加するための API を **AWS Lambda** と **Amazon API Gateway** を使って構築しました。  
 こちらは **Serverless Framework** を使って構築しており、サンプルコードは [**こちら**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-handler) です。
 また、前述のミーティングの ID を保持する **DynamoDB** のレコードが削除された際に別の **Lambda** 関数を呼び出し、 **Chime** 上に存在するミーティングも連動して削除する機能も追加しました。  
