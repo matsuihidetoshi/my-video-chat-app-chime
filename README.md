@@ -45,10 +45,29 @@
 全体構成のうち、一つ一つの箇所について解説していきます。
 
 ### ミーティングクライアント(Web フロントエンド)
+
+![chime-sdk 002](https://user-images.githubusercontent.com/38583473/183283078-66559139-7612-4ea8-90e0-a65e8174f235.png)
+
 ユーザーがビデオミーティングに参加するためにはクライアントアプリケーションが必要になります。  
 今回は **Vue.js** を使って Web アプリケーションとしてフロントエンドを構築し、 **Amplify Console** のホスティング機能を使ってデプロイしています。  
 静的コンテンツとしてフロントエンドのアプリケーションをデプロイできれば、例えば **Amazon S3** と **Amazon CloudFront** を組み合わせても良いのですが、 **Amplify Console** を使って **GitHub** と連携させ、アプリケーションのデプロイからホスティング、 CI/CD のパイプラインまでをまとめて構成できるので非常に便利です。
 サンプルコードは [**こちら**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-front) です。
+
+実際の画面のサンプルはこちら↓です。
+
+- トップページ
+<img width="761" alt="スクリーンショット 2022-08-07 17 27 20" src="https://user-images.githubusercontent.com/38583473/183283018-15953c09-6daf-4365-bc0d-184c9afc4591.png">
+
+***
+
+- ミーティングの一覧画面
+<img width="632" alt="スクリーンショット 2022-08-07 17 31 36" src="https://user-images.githubusercontent.com/38583473/183283123-b77c6cdb-d09a-4b77-858f-f7979e34594d.png">
+
+***
+
+- ミーティング参加画面
+<img width="632" alt="スクリーンショット 2022-08-07 17 32 11" src="https://user-images.githubusercontent.com/38583473/183283131-ae25c895-291f-4daf-a438-861afcbbe675.png">
+
 
 ### ユーザー登録・ログイン機能
 ユーザーがビデオミーティングを作成して主催したり参加したりする際に、ミーティング自体の作成や削除をする必要があります。  
