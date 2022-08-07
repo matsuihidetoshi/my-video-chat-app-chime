@@ -53,8 +53,6 @@
 静的コンテンツとしてフロントエンドのアプリケーションをデプロイできれば、例えば **Amazon S3** と **Amazon CloudFront** を組み合わせても良いのですが、 **Amplify Console** を使って **GitHub** と連携させ、アプリケーションのデプロイからホスティング、 CI/CD のパイプラインまでをまとめて構成できるので非常に便利です。
 サンプルコードは [**こちら**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-front) です。
 
-実際の画面のサンプルはこちら↓です。
-
 - トップページ
 <img width="761" alt="スクリーンショット 2022-08-07 17 27 20" src="https://user-images.githubusercontent.com/38583473/183283018-15953c09-6daf-4365-bc0d-184c9afc4591.png">
 
@@ -66,15 +64,24 @@
 ***
 
 - ミーティング参加画面
-<img width="632" alt="スクリーンショット 2022-08-07 17 32 11" src="https://user-images.githubusercontent.com/38583473/183283131-ae25c895-291f-4daf-a438-861afcbbe675.png">
+<img width="632" alt="スクリーンショット 2022-08-07 17 32 11" src="https://user-images.githubusercontent.com/38583473/183283244-a7005727-aae0-491c-9576-5aabf873e5b4.png">
 
+***
 
 ### ユーザー登録・ログイン機能
+
+![chime-sdk 003](https://user-images.githubusercontent.com/38583473/183283355-befed671-e161-4aad-a832-a6bc8e553a16.png)
+
 ユーザーがビデオミーティングを作成して主催したり参加したりする際に、ミーティング自体の作成や削除をする必要があります。  
 また、例えば作成したミーティングを削除する際に、ミーティングを作ったユーザーのみが削除できる様にしたい場合などに権限管理なども必要になってきます。  
 そのために今回は **Amazon Cognito** を使ってユーザー登録・ログイン機能を実現しています。  
 こちらは **Amplify CLI** からリソースを作成しており、前述の **ミーティングクライアント(Web フロントエンド)** の [**サンプルコード**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-front) に含まれているため、別途リソースを作成したりする必要はありません。  
 また、各種フレームワークに対応した基本的なユーザー登録・ログイン機能については [**こちら**](https://github.com/aws-samples/aws-amplify-auth-starters) にサンプルが紹介されています。
+
+- ログイン画面
+<img width="761" alt="スクリーンショット 2022-08-07 17 27 38" src="https://user-images.githubusercontent.com/38583473/183283299-a3c65e6a-9517-4cbe-b83b-1ab3442a9b9b.png">
+
+***
 
 ### ミーティング情報の管理機能
 ユーザーがミーティングを作成したり、作成済みのミーティングを一覧表示したり、その中からミーティングを選択して参加したりといった機能を実現するために、ミーティングの ID を保存する必要があります。  
@@ -99,4 +106,3 @@
 今回の内容を参考に、ぜひご自身でもお試しいただけると幸いです！
 
 Happy Coding!
-
