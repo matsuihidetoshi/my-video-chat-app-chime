@@ -88,7 +88,7 @@
 ![chime-sdk 004](https://user-images.githubusercontent.com/38583473/183283810-19c5a2e2-c7da-4c88-be3a-79c9e01b4b6d.png)
 
 ユーザーがミーティングを作成したり、作成済みのミーティングを一覧表示したり、その中からミーティングを選択して参加したりといった機能を実現するために、ミーティングの ID を保存する必要があります。  
-今回は **Amazon DynamoDB** をデータソースとし、 **AWS AppSync** を経由してフロントエンドにリアルタイムにミーティングの ID の更新を反映する機能を実現しました。  
+今回は **Amazon DynamoDB** をデータソースとし、 **AWS AppSync** を経由してフロントエンドにミーティング ID の更新をリアルタイムに反映する機能を実現しました。  
 こちらもユーザー登録・ログイン機能と同様、 **Amplify CLI** を使ってリソースを作成しており、 [**サンプルコード**](https://github.com/matsuihidetoshi/my-video-chat-app-chime-front) にも含まれています。  
 
 ***
